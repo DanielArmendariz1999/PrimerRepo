@@ -4,7 +4,10 @@ using namespace std;
 class Operaciones{//Clase 1
 public:
     void resultado(int a, int b) {//metodo
-        cout<<"Suma: "<<suma(a,b)<<"Resta: "<<resta(a,b)<<"Multiplicacion: "<<multiplicacion(a,b);
+        cout<<"Suma: "<<suma(a,b)<<endl<<
+        "Resta: "<<resta(a,b)<<endl<<
+        "Multiplicacion: "<<multiplicacion(a,b)<<endl<<
+        "Division: "<<division(a,b);
     }
     int suma(int a,int b){//metodo
         return a+b;
@@ -14,6 +17,13 @@ public:
     }
     int multiplicacion(int a,int b){//metodo
         return a*b;
+    }
+    double division(int a,int b){//metodo
+    double c;
+        if (b==0){
+            return 0;
+        }
+        return a/b;
     }
 };
 
